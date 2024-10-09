@@ -12,24 +12,24 @@ describe('Acesso à página web Narwal Sistemas', () => {
       .should('be.visible')
   }),
 
-it('Deve validar que todos os itens do menu estão presentes e clicaveis', () => {
-  const menuItems = [
-    'Home',
-    'Clientes',
-    'Módulos',
-    'Integrações',
-    'Becomex',
-    'Soluções',
-    'Cloud',
-    'Vagas',
-    'Blog'
-  ]
+    it('Deve validar que todos os itens do menu estão presentes e clicaveis', () => {
+      const menuItems = [
+        'Home',
+        'Clientes',
+        'Módulos',
+        'Integrações',
+        'Becomex',
+        'Soluções',
+        'Cloud',
+        'Vagas',
+        'Blog'
+      ]
 
-  menuItems.forEach((item, index) => {
-    cy.get(`nav[aria-label="Menu"] > ul > li`).eq(index)
-      .should('contain', item)
-      .click()
-  })
-})
+      menuItems.forEach((item, index) => {
+        cy.get(`nav[aria-label="Menu"] > ul > li`).eq(index)
+          .should('contain', item)
+          .click()
+      })
+    })
 
 })
