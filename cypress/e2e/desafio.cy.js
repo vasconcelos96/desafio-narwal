@@ -9,7 +9,6 @@ describe('Acesso à página web Narwal Sistemas', () => {
 
     cy.get('a.elementor-item.elementor-item-active[href="https://www.narwalsistemas.com.br/"]')
       .contains('Home')
-
       .should('be.visible')
   }),
 
