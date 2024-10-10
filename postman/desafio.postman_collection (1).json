@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "77a5601c-4371-4b74-84b4-1fe10fbe8938",
-		"name": "Desafio",
+		"name": "desafio",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "18811794",
 		"_collection_link": "https://warped-station-2849.postman.co/workspace/Narwal~66b13858-df98-40e5-adfd-bd150b82ca1b/collection/18811794-77a5601c-4371-4b74-84b4-1fe10fbe8938?action=share&source=collection_link&creator=18811794"
@@ -36,7 +36,8 @@
 							"});",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				},
 				{
@@ -48,7 +49,8 @@
 							"",
 							"pm.collectionVariables.set(\"name\", \"Desafio-Narwal\")"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -113,7 +115,8 @@
 							"});",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -121,16 +124,6 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "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",
-							"type": "string"
-						}
-					]
-				},
 				"method": "GET",
 				"header": [],
 				"body": {
@@ -168,7 +161,8 @@
 						"exec": [
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				},
 				{
@@ -181,7 +175,8 @@
 							"    pm.expect(response).to.not.be.empty;",
 							"});"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -233,7 +228,8 @@
 							"})",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -260,6 +256,20 @@
 		},
 		{
 			"name": "Exclui Repositorio",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('O status deve ser 204', function () {",
+							"    pm.expect(pm.response.code).to.eql(204);",
+							"})"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -307,7 +317,8 @@
 							"});",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -349,7 +360,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "{{api_token}}",
+				"value": "{{api_key}}",
 				"type": "string"
 			}
 		]
@@ -380,14 +391,6 @@
 			"value": ""
 		},
 		{
-			"key": "repoName",
-			"value": ""
-		},
-		{
-			"key": "nameRepo",
-			"value": ""
-		},
-		{
 			"key": "repo",
 			"value": ""
 		},
@@ -396,8 +399,9 @@
 			"value": "vasconcelos96"
 		},
 		{
-			"key": "api_token",
-			"value": "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"
+			"value": "",
+			"type": "string",
+			"disabled": true
 		}
 	]
 }
