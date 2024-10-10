@@ -10,6 +10,6 @@ module.exports = defineConfig({
     },
   },
   env: {
-    GITHUB_TOKEN: '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', 
+    GITHUB_TOKEN: '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', 
   },
 });
