@@ -1,11 +1,1 @@
-# Ignorar o arquivo de variáveis de ambiente
-.env
-
-# Ignorar pastas de dependências
-node_modules/
-cypress.config.js/
-cypress/videos/
-cypress/screenshots/
-
-# Ignorar arquivos de cache
-.cache/
+cypress.config.js
