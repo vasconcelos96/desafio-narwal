@@ -349,7 +349,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "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",
+				"value": "{{api_token}}",
 				"type": "string"
 			}
 		]
@@ -394,6 +394,10 @@
 		{
 			"key": "git",
 			"value": "vasconcelos96"
+		},
+		{
+			"key": "api_token",
+			"value": "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"
 		}
 	]
 }
