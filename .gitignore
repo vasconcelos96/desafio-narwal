@@ -3,7 +3,7 @@
 
 # Ignorar pastas de dependências
 node_modules/
-cypress.config.js
+cypress.config.js/
 cypress/videos/
 cypress/screenshots/
 
