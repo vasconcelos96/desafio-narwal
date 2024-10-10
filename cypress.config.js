@@ -9,4 +9,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
+  env: {
+    GITHUB_TOKEN: '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', 
+  },
 });
