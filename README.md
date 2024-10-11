@@ -6,12 +6,11 @@ Este repositório contém testes automatizados para o desafio de QA, utilizando 
 Antes de começar, certifique-se de ter os seguintes itens instalados na sua máquina:
 
 - Node.js (recomendado: versão 12 ou superior)
-- npm (geralmente instalado junto com o Node.js)
+- npm 
 - Token de autenticação para acessar a API
 
 # Configuração do Projeto
 - git clone https://github.com/vasconcelos96/desafio-narwal.git
-  + cd desafio-narwal
 - npm install
 
 # Executar os Testes
